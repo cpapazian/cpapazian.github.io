@@ -1,14 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My Homebrew Journal</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <title>Stuff and Things</title>
+    <description>Just a place where I can write things down ... 
 </description>
     <link>http://cpapazian.github.io/</link>
     <atom:link href="http://cpapazian.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 26 Dec 2014 17:30:54 -0800</pubDate>
-    <lastBuildDate>Fri, 26 Dec 2014 17:30:54 -0800</lastBuildDate>
+    <pubDate>Fri, 26 Dec 2014 18:44:40 -0800</pubDate>
+    <lastBuildDate>Fri, 26 Dec 2014 18:44:40 -0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Summer APL</title>
+        <description>&lt;p&gt;Brewed this about 6 weeks ago, but never recorded it, due to the apparent
+loss (hopefully temporary?) of my brewing notebooks. It was the first beer
+brewed at my new place in SF (despite living here for almost 6 months). Grain
+bill is modeled after the maibock I made with Carl a while back.&lt;/p&gt;
+
+&lt;p&gt;Recipe is as follows ...&lt;/p&gt;
+
+&lt;h4&gt;Grain:&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;8 lbs. German Pilsner Malt&lt;/li&gt;
+  &lt;li&gt;4 lbs. German Munich Malt&lt;/li&gt;
+  &lt;li&gt;1/4 lb. Acid Malt&lt;/li&gt;
+  &lt;li&gt;1/4 lb. Melanoiden Malt&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Hops:&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;1 oz. Summer (5% AA) FWH&lt;/li&gt;
+  &lt;li&gt;1 oz. Hersebrucker (4% AA) FWH&lt;/li&gt;
+  &lt;li&gt;1 oz. Summer (5% AA) Flameout&lt;/li&gt;
+  &lt;li&gt;1 oz. Hersebrucker (4% AA) Flameout&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Wort:&lt;/h4&gt;
+&lt;p&gt;OG: 1.060.&lt;/p&gt;
+
+&lt;h4&gt;Yeast:&lt;/h4&gt;
+&lt;p&gt;2 packs W-34/70&lt;/p&gt;
+
+&lt;h4&gt;Ferment:&lt;/h4&gt;
+&lt;p&gt;FG: 1.014. Added 0.4 oz. sugar for carbonation, and let sit at room
+temperature for re-fermentation + diacetyl rest for 3 days, then transferred to
+freezer to lager at ~3&amp;deg;C. &lt;/p&gt;
+
+&lt;h4&gt;Taste:&lt;/h4&gt;
+&lt;p&gt;Malt and yeast character are nice. Summer hops are very fruity ... too
+assertive for a maibock style lager, but without the sort of edge appropriate for
+and APA/XPA. Could do better paired with some citrussy/dank American hops, or in
+a maltier (possibly English) style.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 26 Dec 2014 08:43:30 -0800</pubDate>
+        <link>http://cpapazian.github.io/beer/brewing/2014/12/26/summer-apa.html</link>
+        <guid isPermaLink="true">http://cpapazian.github.io/beer/brewing/2014/12/26/summer-apa.html</guid>
+        
+        
+        <category>beer</category>
+        
+        <category>brewing</category>
+        
+      </item>
+    
+      <item>
+        <title>Brown Saison</title>
+        <description>&lt;p&gt;Brewed this about a month ago, but never recorded it, due to the apparent
+loss (hopefully temporary?) of my brewing notebooks. Modeled after a black
+saison that was particularly well received, though I apparently eased up on the
+roast/dark malts.&lt;/p&gt;
+
+&lt;h4&gt;Wort:&lt;/h4&gt;
+&lt;p&gt;OG: 1.056.&lt;/p&gt;
+
+&lt;h4&gt;Yeast:&lt;/h4&gt;
+&lt;p&gt;1 pack Belle Saison&lt;/p&gt;
+
+&lt;h4&gt;Ferment:&lt;/h4&gt;
+&lt;p&gt;Started around 66&amp;deg;F, let sit for 48 hours, then ramped up to 72&amp;deg;F.
+FG: 1.004. Added 0.4 oz. sugar for carbonation, and let sit at room
+temperature for re-fermentation, then transferred to keg fridge.&lt;/p&gt;
+
+&lt;h4&gt;Taste:&lt;/h4&gt;
+&lt;p&gt;Initial review is hot with tons of phenol. Neither malt nor hops are
+assertive enough. Thin. Hopefully this will evolve a bit ...&lt;/p&gt;
+</description>
+        <pubDate>Fri, 26 Dec 2014 08:43:30 -0800</pubDate>
+        <link>http://cpapazian.github.io/beer/brewing/2014/12/26/brown-saison.html</link>
+        <guid isPermaLink="true">http://cpapazian.github.io/beer/brewing/2014/12/26/brown-saison.html</guid>
+        
+        
+        <category>beer</category>
+        
+        <category>brewing</category>
+        
+      </item>
     
       <item>
         <title>Boxing Day XPA</title>
