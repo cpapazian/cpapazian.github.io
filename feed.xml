@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Homebrew Journal</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</description>
+    <link>http://cpapazian.github.io/</link>
+    <atom:link href="http://cpapazian.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 26 Dec 2014 17:30:54 -0800</pubDate>
+    <lastBuildDate>Fri, 26 Dec 2014 17:30:54 -0800</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Boxing Day XPA</title>
+        <description>&lt;p&gt;Brewed an XPA today with pils/munich base hopped with mosaic, amarillo, and
+centennial.&lt;/p&gt;
+
+&lt;p&gt;Got started around 10:00 AM, but was in no particular rush. Cleaned
+up around 4:30 PM. Mash went well, despite having just enough foil for the
+screen. Hit target gravity, but a little short on wort (poured the sludge in to
+hit 5 gallons). Was able to get down to 70&amp;deg; with the sump pump and a
+single bag of ice.&lt;/p&gt;
+
+&lt;p&gt;Was going to do an even split of mosaic and amarillo, but found a bag of
+centennial that was asking to be used.&lt;/p&gt;
+
+&lt;p&gt;Recipe is as follows ...&lt;/p&gt;
+
+&lt;h4&gt;Grain:&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;10 lbs. German Pilsner Malt&lt;/li&gt;
+  &lt;li&gt;4 lbs. German Munich Malt&lt;/li&gt;
+  &lt;li&gt;1 lb. White Wheat Malt&lt;/li&gt;
+  &lt;li&gt;1/4 lb. Acid Malt&lt;/li&gt;
+  &lt;li&gt;1/4 lb. Melanoiden Malt&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Mash:&lt;/h4&gt;
+&lt;p&gt;Mashed in at 148&amp;deg; for what turned out to be ~75 minutes.&lt;/p&gt;
+
+&lt;h4&gt;Hops:&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;1 oz. Mosaic (12.5% AA) FWH&lt;/li&gt;
+  &lt;li&gt;0.5 oz. Amarillo (8.4% AA) FWH&lt;/li&gt;
+  &lt;li&gt;0.5 oz. Centenial (11.8% AA) FWH&lt;/li&gt;
+  &lt;li&gt;1 oz. Mosaic (12.5% AA) Flameout&lt;/li&gt;
+  &lt;li&gt;0.7 oz. Amarillo (8.4% AA) Flameout&lt;/li&gt;
+  &lt;li&gt;0.3 oz. Centenial (11.8% AA) Flameout&lt;/li&gt;
+  &lt;li&gt;1 oz. Mosaic (12.5% AA) Dry Hop&lt;/li&gt;
+  &lt;li&gt;0.6 oz. Amarillo (8.4% AA) Dry Hop&lt;/li&gt;
+  &lt;li&gt;0.4 oz. Centenial (11.8% AA) Dry Hop&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Boil:&lt;/h4&gt;
+&lt;p&gt;A little over 90 minutes. Used two pots to get more burner.&lt;/p&gt;
+
+&lt;h4&gt;Wort:&lt;/h4&gt;
+&lt;p&gt;OG: 1.072. Barely 5 gallons (with sludge).&lt;/p&gt;
+
+&lt;h4&gt;Yeast:&lt;/h4&gt;
+&lt;p&gt;1 pack US-05&lt;/p&gt;
+</description>
+        <pubDate>Fri, 26 Dec 2014 08:43:30 -0800</pubDate>
+        <link>http://cpapazian.github.io/beer/brewing/2014/12/26/boxing-day-xpa.html</link>
+        <guid isPermaLink="true">http://cpapazian.github.io/beer/brewing/2014/12/26/boxing-day-xpa.html</guid>
+        
+        
+        <category>beer</category>
+        
+        <category>brewing</category>
+        
+      </item>
+    
+  </channel>
+</rss>
