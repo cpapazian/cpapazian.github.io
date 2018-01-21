@@ -10456,7 +10456,7 @@ function getMode_(win) {
   var FORCE_LOCALDEV = !!(self.AMP_CONFIG && self.AMP_CONFIG.localDev);
   var AMP_CONFIG_3P_FRAME_HOST = self.AMP_CONFIG && self.AMP_CONFIG.thirdPartyFrameHost;
 
-  var isLocalDev = IS_DEV && !!(win.location.hostname == 'localhost' || FORCE_LOCALDEV && win.location.hostname == AMP_CONFIG_3P_FRAME_HOST || win.location.ancestorOrigins && win.location.ancestorOrigins[0] && (0, _string.startsWith)(win.location.ancestorOrigins[0], 'http://localhost:')) && (
+  var isLocalDev = true; //IS_DEV && !!(win.location.hostname == 'localhost' || FORCE_LOCALDEV && win.location.hostname == AMP_CONFIG_3P_FRAME_HOST || win.location.ancestorOrigins && win.location.ancestorOrigins[0] && (0, _string.startsWith)(win.location.ancestorOrigins[0], 'http://localhost:')) && (
   // Filter out localhost running against a prod script.
   // Because all allowed scripts are ours, we know that these can only
   // occur during local dev.
