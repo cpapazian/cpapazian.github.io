@@ -8,30 +8,33 @@
 <html ⚡>
 <head>
   <meta charset="utf-8">
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
-  <!-- ## Setup -->
-  <!-- Import the `amp-bind` component ... -->
-  <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
-  <!-- Import the `amp-list` component ... -->
-  <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
-  <!-- ... and the `amp-mustache` component in the header -->
-  <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
+  <script async src="/amp/dist/amp.js"></script>
+  <script async custom-element="amp-bind" src="/amp/dist/v0/amp-bind-0.1.max.js"></script>
+  <script async custom-element="amp-list" src="/amp/dist/v0/amp-list-0.1.max.js"></script>
+  <script async custom-element="amp-form" src="/amp/dist/v0/amp-form-0.1.max.js"></script>
+  <script async custom-element="amp-position-observer" src="/amp/dist/v0/amp-position-observer-0.1.max.js"></script>
+  <script async custom-template="amp-mustache" src="/amp/dist/v0/amp-mustache-0.1.max.js"></script>
+
   <link rel="canonical" href="https://ampbyexample.com/components/amp-list/">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   <style amp-custom>
-  .amp-list-wrapper {
-    height: 600px;
-  }
-  .amp-list-more-button {
-    height: 20px;
-  }
   amp-list {
     margin-left: 16px;
+    border: 1px solid black;
   }
   .list-overflow {
     width: 160px;
     margin-left: auto;
+  }
+  .wrapper {
+    border-radius: 8px;
+    width: 170px;
+  }
+  .amp-list-more-button {
+    width: 100px;
+    height: 40px;
+    margin: 16px;
   }
   </style>
 </head>
@@ -55,21 +58,63 @@
   ```
   The list content is rendered via an [amp-mustache template](https://www.ampproject.org/docs/reference/components/amp-mustache). The template can be specified either by id, or by using a nested element.
   -->
-  <amp-state id="s" src="/amp/example/test-page-buffer-0.example.json" [src]="'/amp/example/' + (s.curr || 'test-page-buffer-0.example.json')">
+  <amp-state id="items">
     <script type="application/json">
-      { "buffer": [], "items": [], "page": 0, "next": "test-page-1.example.json" }
+      {
+        "items": []
+      }
+    </script>
+  </amp-state>
+  <amp-state id="feed">
+    <script type="application/json">
+      {
+        "next": "pinfeed-page-0.json",
+        "page": 0
+      }
     </script>
   </amp-state>
 
-  <div class="amp-list-wrapper">
-    <div>
-      <button class="amp-list-more-button" [hidden]="!s.next" on="tap:AMP.setState({s: {buffer: [], curr: s.next, items: s.items.concat(s.buffer), next: null}})">more</button>
-    </div>
-    <amp-list height="600" width="400" layout="fixed" src="#" [src]="s ? s.items.concat(s.buffer) : 'test-page-buffer-0.example.json'" class="m1">
+  <div>
+    <amp-list width="auto" height="600" layout="fixed-height" src="#" [src]="items.items.length > 0 ? items.items : '#'" class="m1">
       <template type="amp-mustache" id="amp-template-id">
-        <div><a href="{{url}}">{{title}}</a></div>
+        <div class="wrapper">
+          <a href="{{link}}">
+            <amp-img
+              height="{{height}}px"
+              layout="responsive"
+              src="{{url}}"
+              width="{{width}}px"></amp-img>
+          </a>
+        </div>
       </template>
     </amp-list>
+  </div>
+  <div [hidden]="!feed.next">
+    <form method="GET"
+      id="pinFeedForm"
+      action-xhr="pinfeed-page-0.json"
+      target="_top"
+      on="submit-success: AMP.setState({
+        items: { items: items.items.concat(event.response.items) },
+        feed: {
+          next: event.response.next,
+          page: (feed.page || 0) + 1
+        }
+      });" >
+      <input type="hidden"
+        name="moreItemsPageIndex"
+        value="0"
+        [value]="feed.page">
+      <input type="submit"
+        class="amp-list-more-button"
+        value="Show more">
+      <amp-position-observer
+        intersection-ratios="1"
+        on="enter:pinFeedForm.submit"
+        layout="nodisplay">
+
+    </form>
+
 
   </div>
 
