@@ -10460,7 +10460,7 @@ function getMode_(win) {
   // Filter out localhost running against a prod script.
   // Because all allowed scripts are ours, we know that these can only
   // occur during local dev.
-  !win.document || !!win.document.querySelector(developmentScriptQuery));
+  // !win.document || !!win.document.querySelector(developmentScriptQuery));
 
   var hashQuery = (0, _urlParseQueryString.parseQueryString_)(
   // location.originalHash is set by the viewer when it removes the fragment
